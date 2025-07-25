@@ -1,0 +1,22 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='sandyie_read',
+    version='0.1.0',
+    packages=find_packages(),
+    install_requires=[
+        'opencv-python',
+        'pytesseract',
+        'pillow',
+        'PyYAML',
+        'PyMuPDF'
+    ],
+    author='Sanju',
+    author_email='dksanjay39@gmail.com',
+    description='Read and extract data from multiple file formats',
+    url='https://github.com/YOUR_USERNAME/sandyie_read',
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License'
+    ]
+)

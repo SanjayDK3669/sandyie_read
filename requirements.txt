@@ -1,0 +1,10 @@
+pandas>=1.5.0
+openpyxl>=3.1.2        # Required for reading/writing Excel files
+xlrd>=2.0.1            # For reading older .xls files (optional)
+PyPDF2>=3.0.1          # For reading PDF files
+js2py>=0.71            # For parsing .js files
+pytest>=8.0.0          # For running unit tests
+anyio>=4.0.0           # (Automatically used in test environment)
+python-dotenv>=1.0.1   # If you're using environment configs (optional but good to have)
+PyMuPDF>=1.22.0
+opencv-python>=4.9.0
