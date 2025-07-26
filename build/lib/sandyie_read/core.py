@@ -1,16 +1,16 @@
 import logging
-from .exceptions import SandyieException
+from sandyie_read.exceptions import SandyieException
 
 # Import all readers
-from .readers.csv_reader import read_csv
-from .readers.excel_reader import read_excel
-from .readers.json_reader import read_json
-from .readers.js_reader import read_js
-from .readers.txt_reader import read_txt
-from .readers.pdf_reader import read_pdf
-from .readers.image_reader import read_image
-from .readers.ocr_reader import read_ocr
-from .readers.yaml_reader import read_yaml
+from sandyie_read.readers.csv_reader import read_csv
+from sandyie_read.readers.excel_reader import read_excel
+from sandyie_read.readers.json_reader import read_json
+from sandyie_read.readers.js_reader import read_js
+from sandyie_read.readers.txt_reader import read_txt
+from sandyie_read.readers.pdf_reader import read_pdf
+from sandyie_read.readers.image_reader import read_image
+from sandyie_read.readers.ocr_reader import read_ocr
+from sandyie_read.readers.yaml_reader import read_yaml
 
 logger = logging.getLogger(__name__)
 
