@@ -1,19 +1,183 @@
+Great! Here's your updated `README.md` with:
+
+* ✅ Shields.io badges
+* 🔗 PyPI link
+* 📄 Auto-generated Docs section
+* 📬 Contribution and License section
+
+---
+
+````markdown
 # Sandyie Read 📚
 
-A Python library to read and extract data from various file formats including PDF, images, YAML, and more.
+[![PyPI version](https://img.shields.io/pypi/v/sandyie_read?color=blue)](https://pypi.org/project/sandyie-read/)
+[![Downloads](https://img.shields.io/pypi/dm/sandyie_read)](https://pypi.org/project/sandyie-read/)
+[![License](https://img.shields.io/github/license/sandyie/sandyie-read)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
 
-## Features
-- Read from PDFs, PNGs, JPGs, YAML, etc.
-- OCR support for scanned files
-- Clean logging and exception handling
+**Sandyie Read** is a lightweight Python library that helps you effortlessly read and extract data from a variety of file formats including PDF, images (JPG, PNG), YAML, and more — all with clean logging and custom exception handling.
 
-## Installation
+---
+
+## 🔧 Features
+
+- ✅ Read and extract content from:
+  - PDF (text-based and scanned with OCR)
+  - Image files (JPG, PNG)
+  - YAML files
+  - Text files
+  - CSV, Excel (if supported)
+- 🧠 OCR support for scanned documents using Tesseract
+- 📋 Clean, human-readable logging
+- 🛡️ Custom exception handling (via `SandyieException`)
+
+---
+
+## 📦 Installation
+
 ```bash
 pip install sandyie_read
+````
 
+---
 
-example 
+## 🚀 Quick Start
+
+```python
 from sandyie_read import read
 
 data = read("example.pdf")
 print(data)
+```
+
+---
+
+## 📁 Supported File Types & Examples
+
+### 1. 📄 PDF (Text-based or Scanned)
+
+```python
+data = read("sample.pdf")
+print(data)
+```
+
+🟢 **Returns:**
+A `string` containing all extracted text. OCR is auto-applied to scanned PDFs.
+
+---
+
+### 2. 🖼️ Image Files (PNG, JPG)
+
+```python
+data = read("photo.jpg")
+print(data)
+```
+
+🟢 **Returns:**
+A `string` of extracted text using OCR (via Tesseract).
+
+---
+
+### 3. ⚙️ YAML Files
+
+```python
+data = read("config.yaml")
+print(data)
+```
+
+🟢 **Returns:**
+A `dictionary` representing the parsed YAML structure.
+
+---
+
+### 4. 📄 Text Files (.txt)
+
+```python
+data = read("notes.txt")
+print(data)
+```
+
+🟢 **Returns:**
+A `string` containing the full content of the file.
+
+---
+
+### 5. 📊 CSV Files
+
+```python
+data = read("data.csv")
+print(data)
+```
+
+🟢 **Returns:**
+A `pandas.DataFrame` of structured tabular data.
+
+---
+
+### 6. 📈 Excel Files (.xlsx, .xls)
+
+```python
+data = read("report.xlsx")
+print(data)
+```
+
+🟢 **Returns:**
+A `pandas.DataFrame` or a dictionary of DataFrames (if multiple sheets exist).
+
+---
+
+## ⚠️ Error Handling
+
+All exceptions are wrapped in a custom `SandyieException` class, providing clean and traceable messages.
+
+---
+
+## 🧪 Logging
+
+Logs show:
+
+* File type detection
+* Successful/failed read attempts
+* Detailed file handling info
+
+---
+
+## 📚 Auto-Generated Docs
+
+Coming soon at: **[https://sandyie.in/docs](https://sandyie.in/docs)**
+Will include:
+
+* API Reference
+* Exception documentation
+* Usage notebooks
+
+---
+
+## 🤝 Contribution
+
+Found a bug or want a new feature? Feel free to [create an issue](https://github.com/sandyie/sandyie-read/issues) or submit a PR.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📬 Author
+
+**Sanju (aka Sandyie)**
+📧 Email: [dksanjay39@gmail.com](mailto:dksanjay39@gmail.com)
+🔗 Portfolio: [https://sandyie.in](https://sandyie.in)
+🐍 PyPI: [https://pypi.org/project/sandyie-read](https://pypi.org/project/sandyie-read)
+
+```
+
+---
+
+Let me know if you'd like:
+- A `docs/` folder setup with `mkdocs` or `Sphinx`
+- GitHub Actions for automated PyPI deployment
+- Jupyter notebooks or Colab demos linked
+```
