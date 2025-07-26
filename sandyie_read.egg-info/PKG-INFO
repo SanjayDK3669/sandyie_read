@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: sandyie_read
+Version: 0.1.0
+Summary: A lightweight Python package to read various data formats including csv, excel, images, pdf, and more.
+Home-page: https://github.com/SanjayDK3669/sandyie_read
+Author: Sanju
+Author-email: dksanjay39@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: opencv-python
+Requires-Dist: PyMuPDF
+Requires-Dist: pytesseract
+Requires-Dist: pyyaml
+Dynamic: license-file
+
+# Sandyie Read 📚
+
+A Python library to read and extract data from various file formats including PDF, images, YAML, and more.
+
+## Features
+- Read from PDFs, PNGs, JPGs, YAML, etc.
+- OCR support for scanned files
+- Clean logging and exception handling
+
+## Installation
+```bash
+pip install sandyie_read
+
+
+example 
+from sandyie_read import read
+
+data = read("example.pdf")
+print(data)
