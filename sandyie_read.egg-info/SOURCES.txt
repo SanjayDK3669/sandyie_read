@@ -14,10 +14,3 @@ sandyie_read.egg-info/SOURCES.txt
 sandyie_read.egg-info/dependency_links.txt
 sandyie_read.egg-info/requires.txt
 sandyie_read.egg-info/top_level.txt
-tests/test_core.py
-tests/test_readers_csv.py
-tests/test_readers_excel.py
-tests/test_readers_js.py
-tests/test_readers_json.py
-tests/test_readers_txt_pdf.py
-tests/test_readers_yaml.py

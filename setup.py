@@ -8,7 +8,7 @@ long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 # --- Project Metadata ---
 PROJECT_NAME = "sandyie_read"
-VERSION = "0.4.2"  
+VERSION = "0.4.4"  
 AUTHOR = "Sanju (Sandyie)"
 AUTHOR_EMAIL = "dksanjay39@gmail.com"
 DESCRIPTION = "A lightweight Python library to read various data formats including PDF, images, YAML, and more."
