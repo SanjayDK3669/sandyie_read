@@ -2,6 +2,7 @@ LICENSE
 README.md
 pyproject.toml
 setup.cfg
+setup.py
 sandyie_read/__init__.py
 sandyie_read/core.py
 sandyie_read/exceptions.py
