@@ -1,5 +1,5 @@
 import logging
-from exceptions import SandyieException
+from sandyie_read.exceptions import SandyieException
 
 # Import all readers
 from sandyie_read.readers.csv_reader import read_csv
