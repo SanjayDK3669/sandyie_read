@@ -1,5 +1,5 @@
 import logging
-from ..exceptions import SandyieException
+from sandyie_read.exceptions import SandyieException
 
 logger = logging.getLogger(__name__)
 
