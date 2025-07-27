@@ -1,6 +1,5 @@
-pandas<2.1,>=1.3.0
-numpy<1.25,>=1.21.6
-scipy<1.11,>=1.7.0
+pandas<2.3,>=2.1.0
+numpy>=1.21.0
 opencv-python
 PyMuPDF
 pytesseract
@@ -8,3 +7,9 @@ PyYAML
 Pillow
 pdfplumber
 openpyxl
+
+[:python_version < "3.11"]
+scipy<1.11,>=1.7.0
+
+[:python_version >= "3.11" and python_version < "3.14"]
+scipy<1.15,>=1.7.0

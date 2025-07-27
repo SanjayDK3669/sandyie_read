@@ -1,18 +1,24 @@
-# requirements.txt
+# Ensure a modern build environment (for developers)
+setuptools>=68.0.0
+wheel>=0.40.0
 
-pandas>=1.5.0
-openpyxl>=3.1.2        # Required for reading/writing Excel files
-xlrd>=2.0.1            # For reading older .xls files (optional)
-PyPDF2>=3.0.1          # For reading PDF files
-js2py>=0.71            # For parsing .js files
-pytest>=8.0.0          # For running unit tests
-anyio>=4.0.0           # (Automatically used in test environment)
-python-dotenv>=1.0.1   # If you're using environment configs (optional but good to have)
-PyMuPDF>=1.22.0
-opencv-python>=4.9.0
+# Core runtime dependencies
+pandas>=2.1.0,<2.3
+numpy>=1.21.0
 
 # SciPy pins for multi-version support:
 # Python ≤3.10 ⇒ SciPy 1.7.0–<1.11
 # Python 3.11–3.13 ⇒ SciPy 1.7.0–<1.15
 scipy>=1.7.0,<1.11; python_version < "3.11"
 scipy>=1.7.0,<1.15; python_version >= "3.11" and python_version < "3.14"
+
+opencv-python>=4.9.0
+PyMuPDF>=1.22.0
+pytesseract>=0.3.10
+PyYAML>=6.0
+Pillow>=9.0.0
+pdfplumber>=0.7.5
+openpyxl>=3.1.2
+
+# Optional/testing/dev tools
+pytest>=8.0.0
