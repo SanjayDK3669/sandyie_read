@@ -1,10 +1,7 @@
 LICENSE
 README.md
-pyproject.toml
-setup.cfg
 setup.py
 sandyie_read/__init__.py
-sandyie_read/core.py
 sandyie_read/exceptions.py
 sandyie_read/logging_config.py
 sandyie_read/registry.py
@@ -14,3 +11,14 @@ sandyie_read.egg-info/SOURCES.txt
 sandyie_read.egg-info/dependency_links.txt
 sandyie_read.egg-info/requires.txt
 sandyie_read.egg-info/top_level.txt
+sandyie_read/readers/__init__.py
+sandyie_read/readers/base.py
+sandyie_read/readers/csv_reader.py
+sandyie_read/readers/excel_reader.py
+sandyie_read/readers/image_reader.py
+sandyie_read/readers/js_reader.py
+sandyie_read/readers/json_reader.py
+sandyie_read/readers/ocr_reader.py
+sandyie_read/readers/pdf_reader.py
+sandyie_read/readers/txt_reader.py
+sandyie_read/readers/yaml_reader.py

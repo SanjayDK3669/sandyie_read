@@ -1,29 +1,49 @@
 Metadata-Version: 2.4
 Name: sandyie_read
-Version: 0.4.4
-Summary: A lightweight Python package to read various data formats including csv, excel, images, pdf, and more.
+Version: 0.4.7
+Summary: A lightweight Python library to read various data formats including PDF, images, YAML, and more.
 Home-page: https://github.com/SanjayDK3669/sandyie_read
 Author: Sanju (Sandyie)
-Author-email: Sanju <dksanjay39@gmail.com>
+Author-email: dksanjay39@gmail.com
 License: MIT
-Keywords: data-reader,csv,excel,pdf,image,ocr
-Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
 Requires-Python: >=3.7
 Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: pandas<2.1,>=1.3.0
-Requires-Dist: numpy<2.2.0,>=1.21.6
+Requires-Dist: numpy<1.25,>=1.21.6
 Requires-Dist: scipy<1.11,>=1.7.0
 Requires-Dist: opencv-python
 Requires-Dist: PyMuPDF
 Requires-Dist: pytesseract
-Requires-Dist: pyyaml
+Requires-Dist: PyYAML
+Requires-Dist: Pillow
+Requires-Dist: pdfplumber
+Requires-Dist: openpyxl
 Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
 Dynamic: home-page
+Dynamic: license
 Dynamic: license-file
+Dynamic: requires-dist
 Dynamic: requires-python
+Dynamic: summary
 
 Great! Here's your updated `README.md` with:
 

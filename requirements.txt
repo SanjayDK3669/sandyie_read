@@ -1,3 +1,5 @@
+# requirements.txt
+
 pandas>=1.5.0
 openpyxl>=3.1.2        # Required for reading/writing Excel files
 xlrd>=2.0.1            # For reading older .xls files (optional)
@@ -8,3 +10,9 @@ anyio>=4.0.0           # (Automatically used in test environment)
 python-dotenv>=1.0.1   # If you're using environment configs (optional but good to have)
 PyMuPDF>=1.22.0
 opencv-python>=4.9.0
+
+# SciPy pins for multi-version support:
+# Python ≤3.10 ⇒ SciPy 1.7.0–<1.11
+# Python 3.11–3.13 ⇒ SciPy 1.7.0–<1.15
+scipy>=1.7.0,<1.11; python_version < "3.11"
+scipy>=1.7.0,<1.15; python_version >= "3.11" and python_version < "3.14"
