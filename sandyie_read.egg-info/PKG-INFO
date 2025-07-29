@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: sandyie_read
-Version: 0.4.9
+Version: 1.1.0
 Summary: A lightweight Python library to read various data formats including PDF, images, YAML, and more.
 Home-page: https://github.com/SanjayDK3669/sandyie_read
 Author: Sanju (Sandyie)
@@ -27,8 +27,10 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: pandas<2.3,>=2.1.0
 Requires-Dist: numpy>=1.21.0
+Requires-Dist: pyarrow>=12.0.0
 Requires-Dist: scipy<1.11,>=1.7.0; python_version < "3.11"
 Requires-Dist: scipy<1.15,>=1.7.0; python_version >= "3.11" and python_version < "3.14"
+Requires-Dist: python-docx>=0.8.11
 Requires-Dist: opencv-python
 Requires-Dist: PyMuPDF
 Requires-Dist: pytesseract
@@ -36,6 +38,8 @@ Requires-Dist: PyYAML
 Requires-Dist: Pillow
 Requires-Dist: pdfplumber
 Requires-Dist: openpyxl
+Requires-Dist: beautifulsoup4>=4.9.0
+Requires-Dist: scikit-learn>=1.0
 Dynamic: author
 Dynamic: author-email
 Dynamic: classifier
@@ -68,7 +72,7 @@ Dynamic: summary
 ## ⚠️ Python Compatibility
 
 > 🐍 **This library requires Python 3.7+**.  
-> ⚠️ Some features may not work properly in versions below Python 3.11. Please use **Python 3.11 or above** for best compatibility.
+> ⚠️ Some features may not work properly in versions below Python 3.11. Please use **Python 3.12 or below** for best compatibility.
 
 ---
 
@@ -89,6 +93,13 @@ Dynamic: summary
 ## 📦 Installation
 
 ```bash
+
+> First check your pip 
+python.exe -m pip install --upgrade pip
+python.exe -m pip install --upgrade setuptools
+pip cache purge
+
+
 pip install sandyie_read
 ```
 
@@ -125,7 +136,7 @@ data = read("photo.jpg")
 print(data)
 ```
 
-🟢 **Returns:** A `string` of OCR-extracted text.
+🟢 **Returns:** A `numpy array format` of OCR-extracted text.
 
 ---
 

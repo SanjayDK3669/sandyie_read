@@ -18,7 +18,7 @@
 ## ⚠️ Python Compatibility
 
 > 🐍 **This library requires Python 3.7+**.  
-> ⚠️ Some features may not work properly in versions below Python 3.11. Please use **Python 3.11 or above** for best compatibility.
+> ⚠️ Some features may not work properly in versions below Python 3.11. Please use **Python 3.12 or below** for best compatibility.
 
 ---
 
@@ -39,6 +39,13 @@
 ## 📦 Installation
 
 ```bash
+
+> First check your pip 
+python.exe -m pip install --upgrade pip
+python.exe -m pip install --upgrade setuptools
+pip cache purge
+
+
 pip install sandyie_read
 ```
 
@@ -75,7 +82,7 @@ data = read("photo.jpg")
 print(data)
 ```
 
-🟢 **Returns:** A `string` of OCR-extracted text.
+🟢 **Returns:** A `numpy array format` of OCR-extracted text.
 
 ---
 

@@ -9,8 +9,13 @@ def read_txt(file_path: str) -> str:
         if not os.path.exists(file_path):
             raise SandyieException(f"Text file not found: {file_path}")
 
-        with open(file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                content = file.read()
+        except UnicodeDecodeError:
+            # Fallback to utf-16 if utf-8 fails
+            with open(file_path, 'r', encoding='utf-16') as file:
+                content = file.read()
 
         logger.info(f"Successfully read TXT file: {file_path}")
         return content

@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="sandyie_read",
-    version="0.4.9",                    
+    version="1.1.0",                    
     author="Sanju (Sandyie)",
     author_email="dksanjay39@gmail.com",
     description="A lightweight Python library to read various data formats including PDF, images, YAML, and more.",
@@ -24,11 +24,11 @@ setup(
     install_requires=[
         "pandas>=2.1.0,<2.3",
         "numpy>=1.21.0",
-
+        "pyarrow>=12.0.0",
         # on Python ≤3.10, use SciPy up through 1.10.x; on 3.11–3.13, up through 1.14.x
         "scipy>=1.7.0,<1.11; python_version < '3.11'",
         "scipy>=1.7.0,<1.15; python_version >= '3.11' and python_version < '3.14'",
-
+        "python-docx>=0.8.11",
         "opencv-python",
         "PyMuPDF",
         "pytesseract",
@@ -36,6 +36,8 @@ setup(
         "Pillow",
         "pdfplumber",
         "openpyxl",
+        "beautifulsoup4>=4.9.0",
+        "scikit-learn>=1.0",
     ],
 
     license="MIT",
