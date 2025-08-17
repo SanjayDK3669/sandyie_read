@@ -11,7 +11,7 @@
   <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/Python-3.7%2B-blue.svg" alt="Python Version"></a>
 </p>
 
-<p align="center"><strong>Effortlessly read files like PDFs, images, YAML, CSV, Excel, and more — powered by logging and custom exceptions.</strong></p>
+<p align="center"><strong>Effortlessly read files like PDFs, images, YAML, CSV, Excel, and 24+ more files — powered by logging and custom exceptions.</strong></p>
 
 ---
 
@@ -163,4 +163,5 @@ See [LICENSE](LICENSE) for more.
 🐍 PyPI: [https://pypi.org/project/sandyie-read](https://pypi.org/project/sandyie-read)
 
 ---
+
 
