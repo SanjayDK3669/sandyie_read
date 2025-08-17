@@ -51,7 +51,7 @@ python.exe -m pip install --upgrade setuptools
 pip cache purge
 
 
-pip install sandyie_read
+pip install sandyie-read
 ```
 
 ---
@@ -163,3 +163,4 @@ See [LICENSE](LICENSE) for more.
 🐍 PyPI: [https://pypi.org/project/sandyie-read](https://pypi.org/project/sandyie-read)
 
 ---
+
