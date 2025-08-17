@@ -18,18 +18,23 @@
 ## ⚠️ Python Compatibility
 
 > 🐍 **This library requires Python 3.7+**.  
-> ⚠️ Some features may not work properly in versions below Python 3.11. Please use **Python 3.12 or below** for best compatibility.
 
----
 
 ## 🔧 Features
 
 - ✅ Read and extract content from:
   - PDF (text-based and scanned with OCR)
-  - Image files (JPG, PNG)
+  - Image files (JPG, PNG, SVG)
   - YAML files
   - Text files
   - CSV, Excel
+  - TSV files
+  - PARQUET file
+  - PICKLE , Model
+  - HTML 
+  - JS, JSON, 
+  - zip
+  - DOCX file
 - 🧠 OCR support using Tesseract
 - 📋 Human-readable logging
 - 🛡️ Clean exception handling (`SandyieException`)
@@ -64,14 +69,14 @@ print(data)
 
 ## 📁 Supported File Types & Examples
 
-### 1. 📄 PDF (Text-based or Scanned)
+### 1. 📄 PICKLE (Text-based or Scanned)
 
 ```python
-data = read("sample.pdf")
+data = read("sample.pkl")
 print(data)
 ```
 
-🟢 **Returns:** A `string` containing extracted text. OCR is auto-applied to scanned files.
+🟢 **Returns:** A `Model container`.
 
 ---
 
@@ -85,33 +90,10 @@ print(data)
 🟢 **Returns:** A `numpy array format` of OCR-extracted text.
 
 ---
-
-### 3. ⚙️ YAML Files
-
-```python
-data = read("config.yaml")
-print(data)
-```
-
-🟢 **Returns:** A `dictionary` representing the YAML structure.
-
----
-
-### 4. 📄 Text Files (.txt)
+### 3. 📊 PARQUET Files
 
 ```python
-data = read("notes.txt")
-print(data)
-```
-
-🟢 **Returns:** Plain text from file.
-
----
-
-### 5. 📊 CSV Files
-
-```python
-data = read("data.csv")
+data = read("data.parquet")
 print(data)
 ```
 
@@ -119,14 +101,15 @@ print(data)
 
 ---
 
-### 6. 📈 Excel Files (.xlsx, .xls)
+
+### 4. 📊 CSV Files
 
 ```python
-data = read("report.xlsx")
+data = read("data.csv")
 print(data)
 ```
 
-🟢 **Returns:** A `DataFrame` or dict of `DataFrames` for multi-sheet files.
+🟢 **Returns:** `pandas.DataFrame` with structured data.
 
 ---
 
